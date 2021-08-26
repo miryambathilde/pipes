@@ -2,32 +2,32 @@
 <!-- el primer numero es el mínimo de digitos enteros -->
 <!-- el segundo numero es el mínimo de digitos decimales -->
 <!-- el tercer numero es el máximo de decimales -->
-<p>{{numero | number: '3.4-5'}}</p>
+<!-- <p>{{numero | number: '3.4-5'}}</p> -->
 
 <!-- el primer numero es el mínimo de digitos enteros -->
 <!-- el segundo numero es el mínimo de digitos decimales -->
 <!-- el tercer numero es el máximo de decimales -->
-<p>{{porcentaje | percent: '1.2-2'}} </p>
-
+<!-- <p>{{porcentaje | percent: '1.2-2'}} </p>
+ -->
 <!-- LE PONEMOS ENTRE COMILLAS EL VALOR DE LA MONEDA -->
-<p>{{precio | currency: 'EUR'}} </p>
+<!-- <p>{{precio | currency: 'EUR'}} </p> -->
 
 <!-- SI NO PONEMOS NADA POR DEFECTO PONE DOLAR -->
-<p>{{precio | currency}} </p>
+<!-- <p>{{precio | currency}} </p> -->
 
-<p>{{fechaActual | date}}</p>
+<!-- <p>{{fechaActual | date}}</p> -->
 
 <!-- esto lanza las horas cortas -->
-<p>{{fechaActual | date: 'shortTime'}}</p>
+<!-- <p>{{fechaActual | date: 'shortTime'}}</p> -->
 
 <!-- esto lanza las horas con el uso horario -->
-<p>{{fechaActual | date: 'longTime'}}</p>
+<!-- <p>{{fechaActual | date: 'longTime'}}</p> -->
 
 <!-- devuelve la fecha completa -->
-<p>{{fechaActual | date: 'fullDate'}}</p>
+<!-- <p>{{fechaActual | date: 'fullDate'}}</p> -->
 
 
-<p>{{fechaActual | date: 'dd/M/y'}}</p>
+<!-- <p>{{fechaActual | date: 'dd/M/y'}}</p>
 
 <p>{{fechaActual | date: 'dd/MM/y'}}</p>
 
@@ -39,10 +39,19 @@
 <p>{{miString | uppercase}} </p>
 <p>{{miString | lowercase}} </p>
 
-<p>{{alumnos | json}}</p>
+<p>{{alumnos | json}}</p> -->
+<!-- <hr> -->
 
+<h1>{{miString | vuelta}}</h1>
+<hr>
+<h1>{{miString2 | capitalize}}</h1>
+<hr>
+<h1>{{miString3 | substring: 40}}</h1>
+<hr>
+
+<div [innerHTML]="miString3 | substring: 40"></div>
 <!-- El primer numero indica donde empieza y el segundo donde termina -->
-<p>{{animales | slice: 0:2}} </p>
+<!-- <p>{{animales | slice: 0:2}} </p>
 
 <p>{{miPromesa | async}} </p>
 
@@ -54,4 +63,4 @@
       <p>{{user.phone}}</p>
     </article>
   </section>
-</div>
+</div> -->
